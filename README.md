@@ -5,13 +5,13 @@ This script is based on the official instruction on how to install setlX, which 
 [SetlX Official Website](randoom.org/Software/SetlX)
 
 Since the script is still under development, there are not many features.
-It is working for Linux and macOS. It was tested on Ubuntu, Kali Linux and macOS Sierra.
+The script is working for Linux and macOS. It was tested on Ubuntu, Kali Linux and macOS Sierra.
 
 ### Installing setlX ###
 
 You need to be root to execute the script, since you are copying files to <code>/usr/local/</code> and changing the access permissions in order to make it executable. You also need to restart your computer to be able to use the <code>setlX</code> command.
 
-Packages required: wget or curl, java
+Packages required: <code>wget</code> or <code>curl</code>, <code>java</code>
 
 #### Changing version and paths ####
 
