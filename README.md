@@ -13,6 +13,12 @@ You need to be root to execute the script, since you are copying files to <code>
 
 Packages required: <code>wget</code> or <code>curl</code>, <code>java</code>
 
+1. Clone the repository <code>git@github.com:arch37/setlX-Installer.git</code> or just download the <code>setlXinstaller.sh</code> file
+2. Go to the folder, where the script is located
+3. Open a terminal
+4. Execute the script by <code>sudo sh setlXinstaller.sh</code>
+5. Now you can start setlX by entering <code>setlX</code> into the command line (you may have to restart your computer)
+
 #### Changing version and paths ####
 
 You are able to edit the script to change the setlX-version and the paths.
