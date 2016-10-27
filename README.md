@@ -5,7 +5,7 @@ This script is based on the official instruction on how to install setlX, which 
 [SetlX Official Website](randoom.org/Software/SetlX)
 
 Since the script is still under development, there are not many features.
-It is currently only working for Linux. It will work on macOS soon.
+It is working for Linux and macOS. It was tested on Ubuntu, Kali Linux and macOS Sierra.
 
 ### Installing setlX ###
 
