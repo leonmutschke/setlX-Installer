@@ -1,5 +1,5 @@
-# setlX-unix-installer-script
-Bash script to install the setlX interpreter on UNIX like OS
+# Script to install setlX on UNIX-like OS #
+Bash script to install the setlX interpreter on UNIX like Operating systems.
 
 This script is based on the official instruction on how to install setlX, which can be found here:
 [SetlX Official Website](randoom.org/Software/SetlX)
