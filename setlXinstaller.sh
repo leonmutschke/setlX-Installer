@@ -71,8 +71,14 @@ fi
 find ${TmpDir}/setlXlibrary -type f -name '*.*' -exec cp '{}' ${LibDir}/ ';'
 
 #Entering the path of the jar- and library-files
-sed -i 's/setlXJarDirectory\=\"\.\"/setlXJarDirectory\=\"\/usr\/local\/setlX\/\"/' ${TmpDir}/setlX
-sed -i 's/setlXlibraryPath\=\"\$HOME\/setlXlibrary\/\"/setlXlibraryPath\=\"\$HOME\/setlXlibrary\/\"/' ${TmpDir}/setlX
+
+if [ "$(uname)" == "Darwin" ]; then
+  sed -i "" 's/setlXJarDirectory\=\"\.\"/setlXJarDirectory\=\"\/usr\/local\/setlX\/\"/' ${TmpDir}/setlX
+  sed -i "" 's/setlXlibraryPath\=\"\$HOME\/setlXlibrary\/\"/setlXlibraryPath\=\"\$HOME\/setlXlibrary\/\"/' ${TmpDir}/setlX
+elif [ "$(uname)" == "Linux" ]; then
+  sed -i 's/setlXJarDirectory\=\"\.\"/setlXJarDirectory\=\"\/usr\/local\/setlX\/\"/' ${TmpDir}/setlX
+  sed -i 's/setlXlibraryPath\=\"\$HOME\/setlXlibrary\/\"/setlXlibraryPath\=\"\$HOME\/setlXlibrary\/\"/' ${TmpDir}/setlX
+fi
 
 sudo cp ${TmpDir}/setlX ${BinDir}/
 
