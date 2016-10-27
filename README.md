@@ -11,6 +11,8 @@ Also, it has only be tested on Linux Machines! Feel free to test it on macOS.
 
 You need to be root to execute the script, since you are copying files to <code>/usr/local/</code> and changing the access permissions in order to make it executable. You also need to restart your computer to be able to use the <code>setlX</code> command.
 
+Packages required: wget or curl, java
+
 #### Changing version and paths ####
 
 You are able to edit the script to change the setlX-version and the paths.
@@ -18,7 +20,8 @@ By default, the values are:
 <pre><code>setlx_version=2-5-1
 TmpDir="$HOME/tmp/setlX"
 JarDir="/usr/local/setlX/"
-LibDir="$HOME/setlXlibrary"</code></pre>
+LibDir="$HOME/setlXlibrary"
+BinDir="/usr/local/bin"</code></pre>
 
 The <code>TmpDir</code> variable is used to check for a temporary folder.
 The setlX-binary will be downloaded and unzipped to <code>$HOME/tmp/setlX</code> by default.
