@@ -13,7 +13,7 @@ It was tested on Ubuntu, Arch Linux and Kali Linux and macOS Sierra.
 
 You need to be root to execute the script, since you are copying files to <code>/usr/local/</code> and changing the access permissions in order to make it executable. You also need to restart your computer to be able to use the <code>setlX</code> command.
 
-Packages required: <code>wget</code> or <code>curl</code>, <code>java</code>
+Packages required: <code>wget</code>, <code>java</code>
 
 1. Clone the repository or just download the [setlXinstaller.sh](https://raw.githubusercontent.com/arch37/setlX-Installer/master/setlXinstaller.sh) file
 2. Go to the folder, where the script is located
