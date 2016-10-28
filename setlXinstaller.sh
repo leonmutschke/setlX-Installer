@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/usr/bin/env bash
 #
 # This is a script for installing setlX for UNIX-like OS
 # The script is based on the official instruction on how to install setlX
@@ -72,13 +72,27 @@ find ${TmpDir}/setlXlibrary -type f -name '*.*' -exec cp '{}' ${LibDir}/ ';'
 
 #Entering the path of the jar- and library-files
 
-if [ "$(uname)" == "Darwin" ]; then
-  sed -i "" 's/setlXJarDirectory\=\"\.\"/setlXJarDirectory\=\"\/usr\/local\/setlX\/\"/' ${TmpDir}/setlX
-  sed -i "" 's/setlXlibraryPath\=\"\$HOME\/setlXlibrary\/\"/setlXlibraryPath\=\"\$HOME\/setlXlibrary\/\"/' ${TmpDir}/setlX
-elif [ "$(uname)" == "Linux" ]; then
-  sed -i 's/setlXJarDirectory\=\"\.\"/setlXJarDirectory\=\"\/usr\/local\/setlX\/\"/' ${TmpDir}/setlX
-  sed -i 's/setlXlibraryPath\=\"\$HOME\/setlXlibrary\/\"/setlXlibraryPath\=\"\$HOME\/setlXlibrary\/\"/' ${TmpDir}/setlX
-fi
+case "$(uname -s)" in
+
+   Darwin)
+    echo 'Mac OS X'
+    echo "Adding path of jar and library-files..."
+    sed -i "" 's/setlXJarDirectory\=\"\.\"/setlXJarDirectory\=\"\/usr\/local\/setlX\/\"/' ${TmpDir}/setlX
+    sed -i "" 's/setlXlibraryPath\=\"\$HOME\/setlXlibrary\/\"/setlXlibraryPath\=\"\$HOME\/setlXlibrary\/\"/' ${TmpDir}/setlX
+	;;
+
+   Linux)
+    echo 'Linux'
+    echo "Adding path of jar and library-files..."
+    sed -i 's/setlXJarDirectory\=\"\.\"/setlXJarDirectory\=\"\/usr\/local\/setlX\/\"/' ${TmpDir}/setlX
+    sed -i 's/setlXlibraryPath\=\"\$HOME\/setlXlibrary\/\"/setlXlibraryPath\=\"\$HOME\/setlXlibrary\/\"/' ${TmpDir}/setlX
+    ;;
+
+   *)
+     echo "It seems, that you don't use a Linux or Mac system."
+     exit 1 
+     ;;
+esac
 
 sudo cp ${TmpDir}/setlX ${BinDir}/
 
