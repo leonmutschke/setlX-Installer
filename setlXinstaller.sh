@@ -1,4 +1,4 @@
-#!/usr/bin/env bash
+#!/usr/bin/env sh
 #
 # This is a script for installing setlX for UNIX-like OS
 # The script is based on the official instruction on how to install setlX
@@ -100,4 +100,4 @@ sudo chmod +x ${BinDir}/setlX
 
 echo "Installation successful\n\n"
 
-exit 1
+exit 0
