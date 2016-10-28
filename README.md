@@ -4,9 +4,10 @@ Bash script to install the setlX interpreter on UNIX like Operating systems.
 This script is based on the official instruction on how to install setlX, which can be found here:
 [SetlX Official Website](randoom.org/Software/SetlX)
 
-Since the script is still under development, there are not many features.
-At the moment, the script is only working for Linux.
-#### It is not yet working well with macOS. ####
+#### Since the script is still under development, there are not many features. ####
+Right now, it does only a regular installation. Errors might occur, feel free to report them.
+
+At the moment, the script is working for Linux and Mac. You need to have <code>wget</code> in order to install it.
 It was tested on Ubuntu, Arch Linux and Kali Linux and macOS Sierra.
 
 ### Installing setlX ###
