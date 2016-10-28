@@ -7,7 +7,7 @@ This script is based on the official instruction on how to install setlX, which 
 Since the script is still under development, there are not many features.
 At the moment, the script is only working for Linux.
 ##### It is not yet working well with macOS. #####
-It was tested on Ubuntu, Kali Linux and macOS Sierra.
+It was tested on Ubuntu, Arch Linux and Kali Linux and macOS Sierra.
 
 ### Installing setlX ###
 
@@ -18,7 +18,7 @@ Packages required: <code>wget</code> or <code>curl</code>, <code>java</code>
 1. Clone the repository or just download the [setlXinstaller.sh](https://raw.githubusercontent.com/arch37/setlX-Installer/master/setlXinstaller.sh) file
 2. Go to the folder, where the script is located
 3. Open a terminal
-4. Execute the script by <code>sudo sh setlXinstaller.sh</code>
+4. Execute the script by <code>sudo setlXinstaller.sh</code>
 5. Now you can start setlX by entering <code>setlX</code> into the command line (you may have to restart your computer)
 
 #### Changing version and paths ####
