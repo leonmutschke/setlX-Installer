@@ -6,7 +6,7 @@ This script is based on the official instruction on how to install setlX, which 
 
 Since the script is still under development, there are not many features.
 At the moment, the script is only working for Linux.
-##### It is not yet working well with macOS. #####
+#### It is not yet working well with macOS. ####
 It was tested on Ubuntu, Arch Linux and Kali Linux and macOS Sierra.
 
 ### Installing setlX ###
