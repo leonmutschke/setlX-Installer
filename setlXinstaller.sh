@@ -32,18 +32,17 @@ fi
 
 #CHECK for curl or wget
 if ! ( which wget >/dev/null 2>&1 ) ; then
-  if ! ( which curl >/dev/null 2>&1 ) ; then
-    echo "It seems that you have neither installed wget nor curl.\nPlease install wget or curl!\n\n"
+  #if ! ( which curl >/dev/null 2>&1 ) ; then
+    echo "It seems that wget is not installed.\nPlease install wget first!\n\n"
+  # echo "It seems that you have neither installed wget nor curl.\nPlease install wget or curl!\n\n"
     exit 1
-  else
-  
-#Download setlX binary
-  echo "Downloading setlX binary to $HOME/tmp/setlX\n\n"
-  curl -o ${TmpDir}/setlX_v${setlx_version}.binary_only.zip "http://download.randoom.org/setlX/pc/setlX_v${setlx_version}.binary_only.zip" 
-  fi
+  #else
+     #Download setlX binary
+  #  echo "Downloading setlX binary to $HOME/tmp/setlX\n\n"
+  #  curl -o ${TmpDir}/setlX_v${setlx_version}.binary_only.zip "http://download.randoom.org/setlX/pc/setlX_v${setlx_version}.binary_only.zip" 
+  #fi
 
 else
-
   #Download setlX binary
   echo "Downloading setlX binary to $HOME/tmp/setlX\n\n"
   wget -O ${TmpDir}/setlX_v${setlx_version}.binary_only.zip "http://download.randoom.org/setlX/pc/setlX_v${setlx_version}.binary_only.zip"
