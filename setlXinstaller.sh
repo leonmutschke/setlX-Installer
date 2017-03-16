@@ -7,7 +7,7 @@
 ##############################################################################
 
 # Set paths and version for the download
-setlx_version=2-5-1
+setlx_version=2-6-0
 TmpDir="$HOME/tmp/setlX"
 JarDir="/usr/local/setlX"
 LibDir="$HOME/setlXlibrary"
